@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="438" height="223" viewBox="0 0 438 223">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="438" height="223"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="438" height="223" fill="rgba(255,255,255,0)"/>
+    <text id="E" transform="matrix(-1, 0, 0, 1, 216, 216)" fill="#232323" font-size="264" font-family="TheoVanDoesburg, Theo Van Doesburg"><tspan x="0" y="0">E</tspan></text>
+    <text id="G" transform="translate(223 216)" fill="#232323" font-size="264" font-family="TheoVanDoesburg, Theo Van Doesburg"><tspan x="0" y="0">G</tspan></text>
+  </g>
+</svg>
