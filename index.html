@@ -8,41 +8,46 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7efeba23fd.js" crossorigin="anonymous"></script>
     <title>Ethan Gonsalves</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("LrIR6_ub3lnb16FdH");
+})();
+</script>
 </head>
 
-<body>
+<body> 
+   <video src="./assets/Pexels Videos 3665.mp4" class="bg" autoplay loop muted plays-inline></video>
+   
     <section id="landing-page">
         <nav>
             <figure>
                 <h1 class="nav-logo">ETHAN GONSALVES</h1>
             </figure>
-            <ul class="nav-ink-list">
+            <ul class="nav-ink-list" >
                 <li class="nav-link">
-                    <a href="#" class="
+                    <a href="#" class=" 
                     nav-link-ancor
                     link-hovereffect
-                    link-hoverblack">About</a>
+                    link-hoverblack" onclick="toggleModal()" >About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav-link-ancor
                     link-hovereffect
                     link-hoverblack">Projects</a>
                 </li>
-                <li class="nav-link">
+                <li class="nav-link" onclick="toggleModal()">
                     <a href="#" class="
                     nav-link-ancor
                     link-hovereffect
                     link-hoverblack">Contact</a>
                 </li>
-                <li class="nav-link">
-                    <a href="#" class="
-                    nav-link-ancor
-                    link-hovereffect
-                    link-hoverblack "><i class="fa-solid fa-circle-half-stroke  click"></i></a>
+                
                 </li>
             </ul>
         </nav>
+    
         <header class="header">
             <div class="header-content">
                 <h1 class="title">Hey</h1>
@@ -51,7 +56,7 @@
                     I'm a <b class="blue">Frontend Developer</b> with a strong passion for building web applications
                     with great user experiences.
                     <br>
-                    Here's a bit more <b class="blue">about me.</b>
+                    Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social-list">
                     <a href="https://www.linkedin.com/in/ethan-gonsalves-316a3a1ab/ " target="_blank"
@@ -71,7 +76,7 @@
         </header>
 
         <button class="mail-btn
-      click"><i class="fa-solid fa-envelope"></i>
+      click" onclick="toggleModal()"><i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
             <div class="scoll-icon click">
@@ -82,7 +87,8 @@
             <div class="modal-half modal-about">
                 <h3 class="modal-title modal-title-about">Here's a bit about me.</h3>
                 <h4 class="modal-sub-title modal-sub-title-about">Frontend Softwear Dev</h4>
-                <p class="modal-para">I'm a <b class="blue"> frontend softwear</b> engineer with a strong passion for developing websites
+                <p class="modal-para">I'm a <b class="blue"> frontend softwear</b> engineer with a strong passion for
+                    developing websites
                     with great user experiences.
                     <br>
                     I currently work on extremely diffucult engineering problems and learn from a team consisting of
@@ -94,7 +100,7 @@
                         <span class="lang-name">HTML</span>
                     </figure>
                     <figure class="modal-lang">
-                        <img src="./assets/CSS3_logo.svg.png" class="modal-lang-img"  alt="">
+                        <img src="./assets/CSS3_logo.svg.png" class="modal-lang-img" alt="">
                         <span class="lang-name">CSS</span>
                     </figure class="modal-lang">
                     <figure class="modal-lang">
@@ -111,7 +117,37 @@
                     </figure>
                 </div>
             </div>
-            <div class="modal-half modal-contact">Let's have a chat</div>
+            <div class="modal-half modal-contact">
+                <i class="fas fa-times modal-exit click" onclick="toggleModal()"></i>
+                <h3 class="modal-title modal-title-contact">Let's have a chat!
+
+                </h3>
+                <h4 class="modal-sub-title modal-sub-title-contact">Im currently open to new opportunities.
+
+                </h4>
+                <form id="contact-form" onsubmit="contact(event)" >
+                    <div class="form-item">
+                        <label class="form-item-label">Name</label>
+                        <input class="input" type="text" name="user_name" required></input>
+                    </div>
+                    <div class="form-item">
+                        <label class="form-item-label">Email</label>
+                        <input class="input" type="email" name="user_email" required></input>
+                    </div>
+                    <div class="form-item">
+                        <label class="form-item-label">Message</label>
+                        <textarea class="input" type="text" name="message" required></textarea>
+                    </div>
+                    <button id="contact-submit" class="form-submit">Send it my way</button>
+                </form>
+                <div class="modal-overlay modaloverlay-loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal-overlay modal-overlay-success">
+                    Thanks for the message! Looking forward to speaking to you soon
+                </div>
+            </div>
+           
         </div>
     </section>
     <section id="projects">
@@ -279,6 +315,7 @@
             </div>
         </div>
     </footer>
+    
 
     <script src="app.js"></script>
 </body>
