@@ -7,12 +7,12 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    
+    background-color: #232323;
 }
 .bg{
     z-index: 0.1;
     position: fixed;
-    
+   
   transform: translate()
 }
 nav,
@@ -41,7 +41,7 @@ a{
     text-decoration: none;
 }
 section{
-    background-color: rgb(243, 243, 243);
+    background-color: #232323;
 }
 .title{
  font-size: 120px;
@@ -492,6 +492,7 @@ animation: spinner 750ms infinite;
     text-align: center;
     font-size: 48px;
     margin-bottom: 30px;
+    color:#ffffff;
 }
 
 .project-img{
