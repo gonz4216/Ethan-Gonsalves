@@ -122,7 +122,9 @@ a{
 .cards-wrap{
     
 }
-
+footer{
+  
+}
 .contianer{
     position:relative;
     top: 800px;
@@ -150,17 +152,20 @@ a{
    flex-direction: column;
    font-family: 'gilroy';
    font-size: 16px;
+   padding: 0 70px;
    
 }
 
 .title{
     font-family: 'hanson';
     font-size: 25px;
+    padding-right: 50px;
 }
 
 .col1{
     font-family: 'gilroy';
     font-size: 16px;
+    padding: 0 70px;
 }
 
 .gray{
@@ -171,6 +176,7 @@ a{
 .col2{
 font-family: 'gilroy';
 font-size: 16px;
+padding: 0 70px;
 
 }
 .bold{
