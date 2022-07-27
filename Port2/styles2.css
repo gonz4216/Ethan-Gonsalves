@@ -3,6 +3,9 @@
 padding: 0;
 margin: 0;
 }
+*{
+  overflow: none;
+}
 @font-face {
     font-family: 'Hanson';
     src: url(./fonts/Hanson-Bold.ttf);
@@ -43,16 +46,30 @@ height: 750px;
 
 .nav-links{
     font-size: 19px;
-   
+    font-family: 'gilroy';
 }
 .nav-link{
     margin-top: 30px;
+    
 }
 nav{
   display: flex;
- justify-content: center;
+ justify-content:center;
+ align-items: center;
     
 }
+.btn-port{
+    margin-top: 30px;
+   
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+   border-radius: 20px;
+    padding: 10px 19px;
+    color:rgba(34,111,135,1) ;
+    font-family: 'gilroy';
+  
+}
+
 
 li{
     list-style: none;
@@ -123,18 +140,19 @@ a{
     
 }
 footer{
-  
+
 }
 .contianer{
-    position:relative;
-    top: 800px;
+ 
+    position:fixed;
+    top: 855px;
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px -14px 63px 0px #dedede ;
-   padding-top: 30px;
+   padding-top: 20px;
    
 }
 .links-footer{
@@ -181,4 +199,233 @@ padding: 0 70px;
 }
 .bold{
     font-family: 'gilroy-bold';
+}
+
+.black{
+    color: black;
+}
+
+.about-header{
+    font-family: 'hanson';
+    font-size: 25px;
+    text-align: center;
+padding-bottom:20px ;
+}
+
+.about-para{
+    font-family:'gilroy';
+    text-align: center;
+    max-width: 800px;
+}
+
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boxes-wrap{
+    
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+   grid-template-rows:  120px 120px 120px ;
+   justify-items: center;
+   align-items: center;
+ 
+}
+
+.img-box{
+    width: 90px;
+   
+   
+}
+
+.contianer-box{
+    position: absolute;
+   margin-top: 800px;
+   margin-bottom: 20px;
+}
+
+.hover:hover{
+color: black;
+}
+.hover{
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.test{
+ font-size: 15px;
+   font-family: 'gilroy';
+    text-align: center;
+}
+
+
+.block{
+   display: none;
+}
+
+.white{
+    height: 50%;
+    background-color: red;
+}
+@media (max-height: 915px){
+  .contianer{
+    position:fixed;
+    top: 840px;
+  }
+}
+@media (max-height: 850px){
+  .contianer{
+    position:fixed;
+    top: 780px;
+  }
+}
+@media (max-height: 830px){
+  .contianer{
+    position:fixed;
+    top: 760px;
+  }
+}
+@media (max-height: 814px){
+  .contianer{
+    position:fixed;
+    top: 750px;
+  }
+}
+@media (max-height: 798px){
+  .contianer{
+    position:fixed;
+    top: 740px;
+  }
+}
+@media (max-height: 790px){
+  .contianer{
+    position:fixed;
+    top: 730px;
+  }
+}
+@media (max-height: 770px){
+  .contianer{
+    position:fixed;
+    top: 710px;
+  }
+}
+@media (max-height: 756px){
+  .contianer{
+    position:fixed;
+    top: 700px;
+  }
+}
+@media (max-height: 859px){
+    .contianer{
+        position:fixed;
+        top: 790px;
+      }
+      
+}
+@media (max-height: 880px){
+    .contianer{
+        position:fixed;
+        top: 810px;
+      }
+}
+@media (max-width: 1000px){
+   .name{
+    max-width: 100%;
+    width: 600px;
+   }
+   .para{
+    font-size: 18px;
+   }
+   .nav-links{
+    font-size: 17px;
+   }
+   .btn-port{
+    margin-top: 30px;
+   
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+   border-radius: 20px;
+    padding: 8px 17px;
+    color:rgba(34,111,135,1) ;
+    font-family: 'gilroy';
+  
+}
+}
+
+@media (max-width: 1280px){
+  .col1{
+    padding: 0 10px;
+  }
+  .col2{
+    padding: 0 10px;
+  }
+  .col3{
+    padding: 0 10px;
+  }
+
+  .title{
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 1000px){
+    
+   .col1{
+    font-size: 13px;
+   
+   }
+   .col2{
+    font-size: 13px;
+    
+   }
+   .col3{
+    font-size: 13px;
+    
+   }
+   footer{
+ display: none;
+    
+   }
+   .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header1{
+    padding-right: 20px;
+  }
+
+}
+
+@media (max-width: 688px) {
+    .name{
+        width: 500px;
+    }
+    .para{
+        font-size: 15px;
+        width: 200px;
+    }
+ .about-header{
+  margin-top: 60px;
+ }
+ .contianer-box{
+  padding-top:60px ;
+ }
+}
+
+
+
+@media (max-width: 580px) {
+    .name{
+        width: 400px;
+    }
 }
